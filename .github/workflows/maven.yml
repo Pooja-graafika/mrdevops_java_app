@@ -31,4 +31,8 @@ jobs:
     - name: List JAR files
       run: |
           find . -name "*.jar"
+          
+    - name: List JAR files
+      run: |
+          find ${{ github.workspace }} -name "*.jar
 
