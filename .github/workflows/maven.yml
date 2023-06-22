@@ -28,6 +28,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: List Maven build output
-      run: mvn -B help:effective-pom
+    - name: List JAR files
+      run: |
+          find . -name "*.jar"
 
